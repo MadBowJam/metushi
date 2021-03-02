@@ -1,0 +1,16 @@
+body {
+    font-family: 'OpenSans', sans-serif;
+}
+
+.container {
+    @include site_width (100%);
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.bold {
+    font-weight: bold;
+}
+
