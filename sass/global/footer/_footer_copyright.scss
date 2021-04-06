@@ -1,0 +1,41 @@
+.footer_copyright {
+    background-color: #131313;
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        clear: both;
+        border-bottom: 1px solid #1c1c1c;
+        padding-bottom: 1px;
+    }
+
+    &_list {
+        @include site_width;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_title {
+        padding: 25px 0;
+        font-size: 12px;
+        color: #3c3c3c;
+        text-transform: capitalize;
+    }
+
+    &_item_arrow {
+        content: "";
+        display: block;
+        width: 42px;
+        height: 42px;
+        border: 1px solid #272727;
+        border-radius: 4px;
+        margin: 12px 0;
+        background: #1b1a1b url(../images/icons/arrow.png) no-repeat center;
+    }
+
+    &_link {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+}

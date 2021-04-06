@@ -1,0 +1,4 @@
+@mixin site_width($width: 940px, $margin: 0 auto) {
+    width: $width;
+    margin: $margin;
+}

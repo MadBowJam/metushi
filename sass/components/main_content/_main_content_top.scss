@@ -1,0 +1,36 @@
+.main_content_top {
+    @include site_width (940px, 0 auto 10px);
+
+    &::before {
+        content: "";
+        width: 100%;
+        display: block;
+        clear: both;
+        margin-bottom: -1px;
+        border-top-style: dashed;
+        border-color: #cccccc;
+        border-width: 1px;
+    }
+
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &_item {
+        width: 25%;
+        overflow: hidden;
+    }
+
+    &_link {
+        display: block;
+        font-size: 0;
+        transition: all .5s linear;
+
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
+}
+

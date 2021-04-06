@@ -1,0 +1,27 @@
+.main_content {
+    background-color: #f1f1f1;
+
+    &_background {
+        padding-top: 50px;
+    }
+
+    &_title {
+        font-family: "OpenSans-Bold", sans-serif;
+        font-size: 14px;
+        color: #5e5e5e;
+        text-transform: uppercase;
+        padding: 20px 0 20px 2px;
+        border-top: 1px solid #ff5656;
+        width: max-content;
+
+        &_bottom {
+            border-top: none;
+        }
+    }
+}
+
+
+@import "main_content_top.scss";
+@import "main_content_middle.scss";
+@import "main_content_bottom.scss";
+
